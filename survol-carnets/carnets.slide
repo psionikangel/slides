@@ -1,0 +1,62 @@
+# Survol des carnets de produits
+Novembre 2023
+
+Jérémie Carpentier-Roy
+Architecte de solutions TI, Ville de Montréal
+jeremie.carpentier-roy@montreal.ca
+
+## Objectifs de la présentation
+
+- Offrir une vue d'ensemble des carnets de produits, les plateformes qui les composent et leurs principales interactions (auditoire : Chargés de projet)
+- Lister les caractéristiques importantes de chaque plateforme
+- Démystifier le jargon utilisé par l'équipe technique
+
+
+> On se concentre ici sur les plateformes supportées par **l'équipe DevOps/Automatisation**
+
+## Conteneurisation : Kubernetes (PaaS)
+_Plateforme permettant de déployer en libre-service des charge de travail applicatives_
+
+
+- Leads techniques &#10142; Jocelyn, Yves-Julien
+- Entre 18 et 24 **noeuds (workers)** par environnement, jusqu'à 110 **pods** par noeud
+
+.image images/paas.png 325 _
+
+## Mise en réseau : Nginx / Kong
+_Plateformes permettant d'orienter les requêtes des utilisateurs vers les bons services finaux_
+
+- Leads techniques &#10142; Calin, Yves-Julien
+
+.image images/mer.png 400 _
+
+## CI/CD et IaC : Jenkins+CICD-Lib / ArgoCD / AWX
+_Plateformes offrant des mécanismes d'automatisation pour les builds/tests/déploiements des artéfacts logiciels de la Ville_
+
+- Leads techniques &#10142; Christine, Pascal, Calin
+- Les automatisations en mode libre-service sont desservies par ces plateformes
+
+.image images/cicd-iac.png 360 _
+
+## Observabilité : Prometheus / Grafana / Graylog / Page d'état
+_Plateformes permettant la collecte et la visualisation de métriques dans le but d'effectuer une surveillance en continu des systèmes_
+
+- Leads techniques &#10142; Raed, Calin
+- Les directions de solutions peuvent utiliser ces plateformes pour effectuer leur propre surveillance applicative
+
+.image images/observ.png 345 _
+
+## Services mutualisés : API de stockage / Redis / Authentification citoyenne (Gluu/Azure ADB2C)
+_Plateformes offrant des services **applicatifs** supportées par la DIO_
+
+- Leads techniques &#10142; Pascal, Raphaël
+- Capacités applicatives fournies : Stockage objet (API de stockage), Cache (Redis), Authentification
+
+.image images/servicesmut.png 345 _
+
+## Infonuagique : Landing Zones / FinOps
+_Outils et automatismes fournissant des blocs de bases (Landing Zones) et de l'observabilité financière (FinOps) pour les différents fournisseurs infonuagiques [Azure, AWS]_
+
+- Leads techniques &#10142; Raphaël, Yves-Julien
+
+.image images/cloud.png 425 _
